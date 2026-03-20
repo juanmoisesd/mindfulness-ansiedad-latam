@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+type: dataset
+title: "Mindfulness Interventions in Latin America Dashboard"
+authors:
+  - family-names: "de la Serna Tuya"
+    given-names: "Juan Moisés"
+    orcid: "https://orcid.org/0000-0002-8401-8018"
+    affiliation: "Universidad Internacional de La Rioja (UNIR)"
+    email: "juanmoises.delaserna@unir.net"
+doi: 10.7910/DVN/BR5HUF
+url: https://doi.org/10.7910/DVN/BR5HUF
+repository-code: "https://github.com/juanmoisesd/mindfulness-ansiedad-latam"
+license: CC0-1.0
+date-released: "2026-03-20"
+keywords:
+  - "mindfulness"
+  - "anxiety"
+  - "latin-america"
+  - "dashboard"
+  - "open-data"
+  - "psychology"
+  - "mental-health"
+abstract: "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF"
