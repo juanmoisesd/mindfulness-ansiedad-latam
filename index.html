@@ -1,96 +1,62 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mindfulness en América Latina: Eficacia en Ansiedad y Cognición 2015-2024 | Dashboard</title>
-<meta name="description" content="Dashboard sobre intervenciones MBI, MBSR, MBCT en América Latina: reducción de ansiedad, efectos cognitivos, prevalencia y brecha de tratamiento">
-<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<style>*{box-sizing:border-box;margin:0;padding:0}body{background:#0d1117;color:#e6edf3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6}.container{max-width:1100px;margin:0 auto;padding:32px 24px}h1{font-size:2em;font-weight:700;color:#58a6ff;margin-bottom:12px}h2{font-size:1.4em;color:#79c0ff;margin:28px 0 10px}p{color:#8b949e;margin-bottom:12px;line-height:1.8}.abstract{background:#161b22;border:1px solid #30363d;border-left:4px solid #58a6ff;padding:20px;border-radius:8px;margin:24px 0}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin:24px 0}.kpi{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px;text-align:center}.kpi .val{font-size:2em;font-weight:700;color:#58a6ff}.kpi .lbl{font-size:12px;color:#8b949e;margin-top:4px}.chart-box{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px;margin:20px 0}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}th{background:#21262d;color:#cdd9e5;padding:10px;text-align:left;border:1px solid #30363d}td{padding:9px 10px;border:1px solid #30363d;color:#8b949e}tr:hover td{background:#1c2128}.cite{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;font-family:monospace;font-size:12px;color:#8b949e;white-space:pre-wrap;margin:8px 0}a{color:#58a6ff}.tag{display:inline-block;background:#21262d;color:#58a6ff;border-radius:20px;padding:4px 12px;font-size:12px;margin:4px}</style></head><body>
-<nav style="background:#161b22;padding:12px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid #30363d;position:sticky;top:0;z-index:100">
-  <span style="color:#58a6ff;font-weight:700;font-size:15px;margin-right:8px">🧘 Mindfulness</span>
-  <a href="index.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🏠 Inicio</a>
-  <a href="estudios-clinicos.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🔬 Estudios Clínicos</a>
-  <a href="prevalencia-ansiedad.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">😟 Prevalencia</a>
-  <a href="efectos-cognitivos.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🧠 Cognitivo</a>
-  <a href="acceso-salud-mental.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🏥 Acceso</a>
-  <a href="mbsr.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🌿 MBSR</a>
-  <a href="mbct.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">💆 MBCT</a>
-  <a href="paises.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🌎 Países</a>
-  <a href="brecha-tratamiento.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">⚡ Brecha</a>
-  <a href="tamanio-efecto.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">📐 Efecto</a>
-  <a href="publicaciones.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">📚 Publicaciones</a>
-  <a href="comparativas.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">⚖️ Comparativas</a>
-  <a href="tendencias.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">📈 Tendencias</a>
-  <a href="poblaciones.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">👥 Poblaciones</a>
-  <a href="barreras.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🚧 Barreras</a>
-  <a href="metodologia.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🔬 Metodología</a>
-  <a href="datos.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">💾 Datos</a>
-  <a href="sitemap.html" style="color:#cdd9e5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:13px;background:#21262d">🗺️ Sitemap</a>
-</nav><div class="container">
-<h1>🧘 Mindfulness en América Latina: Eficacia en Ansiedad y Cognición</h1>
-<p style="color:#58a6ff;font-size:1.1em">Intervenciones MBI/MBSR/MBCT: reducción de ansiedad, efectos cognitivos, acceso y publicaciones | 2015–2024</p>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0">
-  <span class="tag">4 archivos de datos</span><span class="tag">35 observaciones</span><span class="tag">Harvard Dataverse</span>
-  <span class="tag">DOI: 10.7910/DVN/AHUZZ0</span><span class="tag">CC0 1.0</span><span class="tag">OPS/OMS 2021</span>
-</div>
-<div class="abstract">
-<strong style="color:#cdd9e5">Resumen</strong>
-<p>Esta base de datos compila evidencia sobre la eficacia de intervenciones basadas en mindfulness (MBI, MBSR, MBCT) en América Latina. Incluye estudios clínicos con datos pre/post de reducción de ansiedad (programa ALMA n=226, Venezuela n=153, metaanálisis enfermería Brasil n=818), prevalencia de trastornos de ansiedad por país según OPS/OMS 2021 (Brasil 9.3%, promedio regional 7.3%), indicadores de acceso a salud mental, y efectos cognitivos de MBI (d=-1.26 ansiedad, d=0.37 atención, d=0.35 memoria de trabajo). Los datos provienen de PubMed/PMC, SciELO, BVS, JAMA, Cochrane, UNDP y OPS.</p>
-</div>
-<div class="kpis">
-  <div class="kpi"><div class="val">d=-1.26</div><div class="lbl">Efecto MBI en ansiedad</div></div>
-  <div class="kpi"><div class="val">7.3%</div><div class="lbl">Prevalencia ansiedad LATAM</div></div>
-  <div class="kpi"><div class="val">73.9%</div><div class="lbl">Brecha de tratamiento</div></div>
-  <div class="kpi"><div class="val">226</div><div class="lbl">Participantes prog. ALMA 2023</div></div>
-  <div class="kpi"><div class="val">818</div><div class="lbl">Meta-análisis enfermería Brasil</div></div>
-  <div class="kpi"><div class="val">4.7%</div><div class="lbl">Prevalencia global (referencia)</div></div>
-</div>
-<div class="chart-box"><div id="c1" style="height:400px"></div></div>
-<div class="chart-box"><div id="c2" style="height:380px"></div></div>
-<h2>📋 Estructura del Dataset (4 hojas)</h2>
-<table>
-<tr><th>Hoja</th><th>Contenido</th><th>Variables</th><th>Observaciones</th></tr>
-<tr><td>Estudios Clínicos</td><td>MBI pre/post: Venezuela, Brasil, México, ALMA</td><td>16</td><td>7</td></tr>
-<tr><td>Prevalencia Ansiedad</td><td>OPS/OMS 2021 por país LATAM</td><td>7</td><td>9</td></tr>
-<tr><td>Acceso Salud Mental</td><td>Acceso y publicaciones MBI 2015-2024</td><td>5</td><td>10</td></tr>
-<tr><td>Efectos Cognitivos</td><td>Tamaños de efecto d de Cohen metaanálisis</td><td>7</td><td>8</td></tr>
-</table>
-<div class="chart-box"><div id="c3" style="height:400px"></div></div>
-<h2>📖 Citar</h2>
-<div class="cite">de la Serna, J. M. (2026). Intervenciones Basadas en Mindfulness: Eficacia en la Reducción de Ansiedad y Mejora del Rendimiento Cognitivo en América Latina. Harvard Dataverse. https://doi.org/10.7910/DVN/AHUZZ0</div>
-<div class="cite">@dataset{delaSerna2026mindfulness,
-  author={de la Serna, Juan Moises},
-  title={Intervenciones Basadas en Mindfulness: Eficacia en la Reducción de Ansiedad y Mejora del Rendimiento Cognitivo en América Latina},
-  year={2026}, publisher={Harvard Dataverse}, doi={10.7910/DVN/AHUZZ0}
-}</div>
-</div>
-<footer style="background:#161b22;border-top:1px solid #30363d;padding:24px;text-align:center;margin-top:48px;color:#8b949e;font-size:13px">
-  <p>DOI: <a href="https://doi.org/10.7910/DVN/AHUZZ0" style="color:#58a6ff">10.7910/DVN/AHUZZ0</a> | Autor: de la Serna, Juan Moises (UNIR) | Licencia: CC0 1.0</p>
-  <p>Fuentes: PubMed/PMC, SciELO, BVS, JAMA, Cochrane, UNDP, OPS/OMS | Datos: Febrero 2026</p>
-</footer>
-<script>
-Plotly.newPlot('c1',
-  [{x:['Brasil','Uruguay','Argentina','Chile','México','Colombia','Perú','Ecuador','Venezuela'],
-    y:[9.3,8.4,7.9,7.6,7.4,7.1,6.9,6.5,5.8],type:'bar',
-    marker:{color:['#ff6b6b','#ff9f43','#ffd32a','#0be881','#48dbfb','#58a6ff','#a55eea','#1dd1a1','#ff4757']},name:'Prevalencia %'}],
-  {title:{text:'Prevalencia de Trastornos de Ansiedad en América Latina (OPS/OMS 2021)',font:{color:'#cdd9e5'}},
-   paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#8b949e'},
-   xaxis:{gridcolor:'#30363d'},yaxis:{gridcolor:'#30363d',title:'Prevalencia (%)'},
-   shapes:[{type:'line',x0:-0.5,x1:8.5,y0:4.7,y1:4.7,line:{color:'#ff6b6b',width:2,dash:'dot'}}],
-   annotations:[{x:7,y:4.7,text:'Media global 4.7%',showarrow:false,font:{color:'#ff6b6b',size:11},yshift:10}]});
-Plotly.newPlot('c2',
-  [{x:['Ansiedad','Depresión','Rumiación','Atención','Mem.Trabajo','Flexib.Cog.','Regulac.Emoc.'],
-    y:[-1.26,-0.87,-0.56,0.37,0.35,0.31,0.44],type:'bar',
-    marker:{color:y=>y.map(v=>v<0?'#0be881':'#58a6ff')}}],
-  {title:{text:'Tamaños de Efecto (d de Cohen) de MBI en Dominios Cognitivos y Emocionales',font:{color:'#cdd9e5'}},
-   paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#8b949e'},
-   xaxis:{gridcolor:'#30363d'},yaxis:{gridcolor:'#30363d',title:'d de Cohen (negativo = reducción)'}});
-
-// Fix colors for bar chart
-var colors2=[...[-1.26,-0.87,-0.56].map(()=>'#0be881'),...[0.37,0.35,0.31,0.44].map(()=>'#58a6ff')];
-Plotly.react('c2',[{x:['Ansiedad','Depresión','Rumiación','Atención','Mem.Trabajo','Flexib.Cog.','Regulac.Emoc.'],y:[-1.26,-0.87,-0.56,0.37,0.35,0.31,0.44],type:'bar',marker:{color:colors2}}],{title:{text:'Tamaños de Efecto (d de Cohen) de MBI',font:{color:'#cdd9e5'}},paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#8b949e'},xaxis:{gridcolor:'#30363d'},yaxis:{gridcolor:'#30363d',title:'d de Cohen'}});
-
-Plotly.newPlot('c3',
-  [{labels:['Brasil','Argentina','México','Colombia','Chile','Otros LATAM'],
-    values:[35,18,22,12,8,5],type:'pie',hole:0.4,
-    marker:{colors:['#ff6b6b','#58a6ff','#0be881','#ffd32a','#48dbfb','#a55eea']}}],
-  {title:{text:'Distribución de Estudios MBI en América Latina (% por país)',font:{color:'#cdd9e5'}},
-   paper_bgcolor:'#161b22',plot_bgcolor:'#161b22',font:{color:'#8b949e'}});
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF">
+  <meta name="author" content="Juan Moisés de la Serna Tuya">
+  <meta name="keywords" content="anxiety, dashboard, latin-america, mental-health, mindfulness, open-data, psychology">
+  <meta property="og:title" content="Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF">
+  <meta property="og:description" content="Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF">
+  <meta property="og:url" content="https://juanmoisesd.github.io/mindfulness-ansiedad-latam/">
+  <title>Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF",
+    "description": "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF",
+    "url": "https://github.com/juanmoisesd/mindfulness-ansiedad-latam",
+    "author": {
+      "@type": "Person",
+      "name": "Juan Moisés de la Serna Tuya",
+      "identifier": "https://orcid.org/0000-0002-8401-8018"
+    },
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "datePublished": "2026-03-20",
+    "keywords": "anxiety, dashboard, latin-america, mental-health, mindfulness, open-data, psychology"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF</h1>
+    <p class="subtitle">Open Dataset by <a href="https://orcid.org/0000-0002-8401-8018">Juan Moisés de la Serna Tuya</a></p>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF</p>
+      <ul>
+        <li><strong>Author:</strong> <a href="https://orcid.org/0000-0002-8401-8018">Juan Moisés de la Serna Tuya</a></li>
+        <li><strong>Institution:</strong> Universidad Internacional de La Rioja (UNIR)</li>
+        <li><strong>License:</strong> <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a></li>
+        <li><strong>Repository:</strong> <a href="https://github.com/juanmoisesd/mindfulness-ansiedad-latam">GitHub</a></li>
+      </ul>
+    </section>
+    <section id="cite">
+      <h2>How to Cite</h2>
+      <code>de la Serna Tuya, J.M. (2026). Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF. GitHub. https://github.com/juanmoisesd/mindfulness-ansiedad-latam</code>
+    </section>
+    <section id="data">
+      <h2>Access Data</h2>
+      <a class="btn" href="https://github.com/juanmoisesd/mindfulness-ansiedad-latam">View on GitHub</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Juan Moisés de la Serna Tuya | <a href="https://orcid.org/0000-0002-8401-8018">ORCID</a> | <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
