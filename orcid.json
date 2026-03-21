@@ -1,0 +1,16 @@
+{
+  "orcid": "0000-0002-8401-8018",
+  "name": "Juan Moisés de la Serna Tuya",
+  "affiliation": "Universidad Internacional de La Rioja (UNIR)",
+  "email": "juanmoises.delaserna@unir.net",
+  "website": "https://juanmoisesdelaserna.es",
+  "profile": "https://orcid.org/0000-0002-8401-8018",
+  "works": [
+    {
+      "title": "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF",
+      "type": "dataset",
+      "url": "https://github.com/juanmoisesd/mindfulness-ansiedad-latam",
+      "year": "2026"
+    }
+  ]
+}
