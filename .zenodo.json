@@ -1,0 +1,40 @@
+{
+  "title": "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF",
+  "description": "Interactive dashboard: Mindfulness-based interventions and anxiety reduction in Latin America. DOI: 10.7910/DVN/BR5HUF",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-zero",
+  "creators": [
+    {
+      "name": "de la Serna Tuya, Juan Moisés",
+      "affiliation": "Universidad Internacional de La Rioja (UNIR)",
+      "orcid": "0000-0002-8401-8018"
+    }
+  ],
+  "keywords": [
+    "anxiety",
+    "dashboard",
+    "latin-america",
+    "mental-health",
+    "mindfulness",
+    "open-data",
+    "psychology",
+    "open-data",
+    "dataset",
+    "research"
+  ],
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ],
+  "grants": [],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/juanmoisesd/mindfulness-ansiedad-latam",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
